@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpenText, BrainCircuit, Dna, ExternalLink, FlaskConical, Heart, HeartPulse, Image as ImageIcon, Mail, Menu, MessageCircle, PhoneCall, PlayCircle, Quote, Send, ShieldCheck, Sparkles, X } from 'lucide-react';
 
 const COMPANY_EMAIL = 'neutechnology.indonesia@gmail.com';
-const COMPANY_WHATSAPP = '6281315888745;
+const COMPANY_WHATSAPP = '6281315888745';
 
 const assessments = [
   ['Gratis', 'Skrining Kesehatan Mental Umum ', 'GMHQ-5 WHO', 'IN / ENG'],
