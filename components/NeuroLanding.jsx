@@ -150,8 +150,6 @@ function SafeSpaceSection({ slide, index, refCallback, goToProducts }) {
           <article className="safe-note">
             <ShieldCheck size={18} />
             <div>
-              <h3>Panduan link sudah disiapkan</h3>
-              <p>Link personal saat ini menuju <strong>#galeri-kehidupan</strong> sebagai placeholder E-Course. Link bisnis memakai tombol internal ke section <strong>Produk Layanan</strong>. Detail lokasi penggantian ada di README.</p>
             </div>
           </article>
         </div>
