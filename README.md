@@ -2,10 +2,12 @@
 
 Migrasi final dari React/Vite ke Next.js App Router. Tampilan, redaksi, background, side menu, popup Galeri Kehidupan, inner scroll, dan behavior utama dipertahankan.
 
+Patch keamanan terbaru: Next.js dinaikkan ke `15.5.9` untuk menghindari blokir Vercel pada versi Next.js yang rentan.
+
 ## Jalankan Lokal
 
 ```bash
-npm install
+npm ci --no-audit --no-fund
 npm run dev
 ```
 
