@@ -3,15 +3,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpenText, BrainCircuit, Dna, ExternalLink, FlaskConical, Heart, HeartPulse, Image as ImageIcon, Mail, Menu, MessageCircle, PhoneCall, PlayCircle, Quote, Send, ShieldCheck, Sparkles, X } from 'lucide-react';
 
-const COMPANY_EMAIL = 'corporate@neurotech.id';
-const COMPANY_WHATSAPP = '6281234567890';
+const COMPANY_EMAIL = 'neutechnology.indonesia@gmail.com';
+const COMPANY_WHATSAPP = '6281315888745;
 
 const assessments = [
-  ['Gratis', 'Skrining Kesehatan Mental Umum (Adapted)', 'GMHQ-5 WHO', 'IN / ENG'],
-  ['Request / Buy Access', 'Skrining Kecemasan Umum (Adapted)', 'Hamilton Adapted', 'IN / ENG'],
-  ['Tersedia', 'Skrining Depresi Umum (Adapted)', 'PHQ-9', 'IN / ENG'],
-  ['Tersedia', 'Skrining Gangguan Tidur (Adapted)', 'SIS', 'IN / ENG'],
-  ['Tersedia', 'Skrining NPD (Adapted)', 'By Neurotech ID', 'IN / ENG'],
+  ['Gratis', 'Skrining Kesehatan Mental Umum ', 'GMHQ-5 WHO', 'IN / ENG'],
+  ['Request / Buy Access', 'Skrining Kecemasan Umum ', 'Hamilton Adapted', 'IN / ENG'],
+  ['Tersedia', 'Skrining Depresi Umum ', 'PHQ-9', 'IN / ENG'],
+  ['Tersedia', 'Skrining Gangguan Tidur ', 'SIS', 'IN / ENG'],
+  ['Tersedia', 'Skrining NPD ', 'By Neurotech ID', 'IN / ENG'],
   ['Menyusul', 'Model skrining psikologis lainnya', 'Library bertahap', 'IN / ENG'],
 ];
 
@@ -48,7 +48,7 @@ const lifeStories = [
 export default function App() {
   const slides = useMemo(() => [
     { id: 'home', nav: 'Home', type: 'home', image: '/assets/neuro-01-vision.png' },
-    { id: 'ruang-aman', nav: 'Ruang Aman', type: 'safe', label: '01 / Ruang Aman', eyebrow: 'Safe Onboarding for Personal & Business Growth', title: 'Membuat akun dan memulai perjalanan.', intro: 'Daftarkan bisnis Anda untuk terhubung & tumbuh. Ruang Aman menjadi gerbang awal bagi personal user maupun pemilik bisnis untuk masuk ke ekosistem Escape, E-Course, dan produk layanan NeuroTech ID.', image: '/assets/neuro-01-vision.png', align: 'center', icon: BrainCircuit },
+    { id: 'ruang-aman', nav: 'Ruang Aman', type: 'safe', label: '01 / Ruang Aman', eyebrow: 'Safe Onboarding for Personal & Business Growth', title: '', intro: 'Daftarkan bisnis Anda untuk terhubung & tumbuh. Ruang Aman menjadi gerbang awal bagi personal user maupun pemilik bisnis untuk masuk ke ekosistem Escape, E-Course, dan produk layanan NeuroTech ID.', image: '/assets/neuro-01-vision.png', align: 'center', icon: BrainCircuit },
     { id: 'produk-layanan', nav: 'Produk Layanan', type: 'products', label: '02 / Produk Layanan', eyebrow: 'Corporate Wellness, AI & Neuroscience Services', title: 'Produk layanan untuk bisnis yang ingin tumbuh bersama manusia yang lebih sehat.', intro: 'Catatan layanan ini dapat dikembangkan menjadi T&C dan perjanjian penggunaan khusus untuk user bisnis, termasuk batas akses, consent, privasi data, dan ruang lingkup pemanfaatan hasil.', image: '/assets/neuro-03-ai-neuroscience.png', icon: HeartPulse },
     { id: 'dukungan-komunitas', nav: 'Dukungan Komunitas', type: 'community', label: '03 / Dukungan Komunitas', eyebrow: 'Community Support, Storytelling & Music Window', title: 'Mari melihat dunia dan cerita mereka. Kita tidak sendirian.', intro: 'Kita bisa berpegangan tangan, saling memberi dukungan, dan membangun ruang aman untuk cerita satu arah yang jujur, hangat, dan tetap terjaga.', image: '/assets/neuro-05-future.png', icon: Sparkles },
     { id: 'riset-pengembangan', nav: 'Riset & Pengembangan', type: 'research', label: '04 / Riset & Pengembangan', eyebrow: 'International Research Library & Evidence-Based Development', title: 'Riset internasional untuk keputusan bisnis yang lebih manusiawi.', image: '/assets/neuro-02-research.png', icon: FlaskConical },
@@ -180,7 +180,7 @@ function CommunitySection({ slide, index, refCallback }) {
 }
 
 function YouTubeBox() {
-  return <div className="youtube-mini" aria-label="Jendela musik rekomendasi dari YouTube"><div className="youtube-mini-head"><PlayCircle size={17} /><span>Musik Rekomendasi</span><small>via YouTube</small></div><div className="youtube-frame"><iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?rel=0&modestbranding=1" title="Musik rekomendasi untuk ruang komunitas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy" /></div><p>Jendela kecil ini tetap menggunakan player YouTube. Video/playlist bisa diganti dari kode tanpa mengubah layout halaman.</p></div>;
+  return <div className="youtube-mini" aria-label="Jendela musik rekomendasi dari YouTube"><div className="youtube-mini-head"><PlayCircle size={17} /><span>Musik Rekomendasi</span><small>via YouTube</small></div><div className="youtube-frame"><iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?rel=0&modestbranding=1" title="Musik rekomendasi untuk ruang komunitas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy" /></div></div>;
 }
 
 function ResearchSection({ slide, index, refCallback }) {
